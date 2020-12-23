@@ -1,0 +1,35 @@
+.sidebar{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.custom-bg{
+    background-color: #f8f9fa !important;
+    position: absolute;
+    top: 8px;
+    margin-left: 10px;
+    outline: 0;
+    box-shadow: none;
+}
+.custom-bg i{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.content{
+    display: flex;
+    float: left;
+    width: 100%;
+}
+.custom-btn{
+    position: absolute; 
+    top: 7px;
+    left: 150px;
+}
+.custom-btn:focus{
+    box-shadow: none;
+
+}
+.mt-10{
+    margin-top: 30px;
+}

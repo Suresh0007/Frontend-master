@@ -1,0 +1,41 @@
+.padding{
+     padding-left: 20px;
+}
+.table tbody td, .table thead th{
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+    border: 1px solid #dee2e6;
+}
+.text p span{
+    font-size: 23px;
+    font-weight: 500;
+    padding-right: 10px;
+}
+.text p{
+    font-size: 13px;
+    padding-left: 10px;
+}
+.mt-4{
+    margin-bottom: 10px;
+}
+.text {
+    background: #f8f9fa;
+    border: 1px solid #f1f1f1;
+    padding: 14px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 12px rgba(207, 236, 236, 0.5);
+}
+.actions .fa-pencil {
+    margin-right: 10px;
+    padding: 7px;
+    background-color: #28a745;
+    color: #fff;
+    border-radius: 3px;
+}
+.actions .fa-trash {
+    margin-right: 10px;
+    padding: 7px;
+    background-color: #dc3545;
+    color: #fff;
+    border-radius: 3px;
+    }

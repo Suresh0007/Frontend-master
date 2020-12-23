@@ -1,0 +1,113 @@
+<div class="container-fluid">
+<div class="row">
+    <div class="col-sm-4 col-lg-4 col-md-4">
+        <div class="text">
+            <p><span>10</span>Audit response pending</p>
+        </div>
+    </div>
+    <div class="col-sm-4 col-lg-4 col-md-4">
+      <div class="text">
+          <p><span>3</span>Audit Completed</p>
+      </div>
+  </div>
+  <div class="col-sm-4 col-lg-4 col-md-4">
+    <div class="text">
+        <p><span>10</span>Audit response pending</p>
+    </div>
+</div>
+
+</div>
+
+<div class="row">
+<div class="col-md-6 col-sm-6 col-lg-6">
+   
+    <div class="mt-10">
+        <div class="production">
+            <p>Your Daily Production Entries</p>
+        </div>
+<div class="table-responsive">
+  <input type="text" [(ngModel)]="query" class="form-control mt-4" placeholder="Search">
+    <table class="row-border hover table">
+        <thead>
+          <tr>
+            <th>S.no</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Gender</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let a of org | search : query">
+            <td>{{a.id}}</td>
+            <td>{{a.firstName}}</td>
+            <td><span *ngIf="a.lastName == '' ">--</span>
+                <span *ngIf="a.lastName !== '' ">{{a.lastName}}</span></td>
+            <td>{{a.gender}}</td>
+            <td>
+              <div class="actions"><i class=" fa fa-pencil" (click)="open(content);editDetails(a)"></i>
+              <i class="fa fa-trash btn-danger" (click)="remove(x.id, i)"></i></div></td>
+          </tr>
+        
+        </tbody>
+      </table>
+</div>
+</div>
+</div>
+
+<div class="col-md-6 col-sm-6 col-lg-6">
+    <fusioncharts
+  type='pie2d'
+  width='550'
+  height='400'
+  [dataSource]='dataSource'
+  (dataplotClick)='dataplotClick($event)'
+  (initialized)='initialized($event)'>
+</fusioncharts>
+ 
+</div>
+</div>
+</div>
+<ng-template #content let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Profile update</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form>
+      <div class="form-group">
+        <label for="dateOfBirth">Date of birth</label>
+        <div class="input-group">
+         <p>this is test</p>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="modal.close()">Save</button>
+  </div>
+</ng-template>
+
+<ng-template #deleteuser let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Profile update</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form>
+      <div class="form-group">
+        <label for="dateOfBirth">Date of birth</label>
+        <div class="input-group">
+         <p>this is test</p>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="modal.close()">Save</button>
+  </div>
+</ng-template>

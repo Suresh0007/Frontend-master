@@ -1,0 +1,43 @@
+<div class="container login-container">
+    <div class="row">
+      <div class="col-md-6 ads">
+        <h1><span id="fl">Annexmed</span></h1>
+      </div>
+      <div class="col-md-6 login-form">
+        <div class="profile-img">
+            <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+        </div>
+        <h3>Login</h3>
+        <form [formGroup]="loginform">
+          <div class="form-group">
+            <input type="text" class="form-control" name="username" placeholder="Username" formControlName="username" autocomplete="off">
+            <div *ngIf="loginform.controls['username'].touched || submitted">
+                <div *ngIf="loginform.controls['username'].hasError('required')" class="error">
+                   User Name is required
+                </div>
+                <!-- <div *ngIf="loginform.controls['username'].hasError('pattern')" class="error">
+                   Special characters are not Allowed.
+                </div> -->
+             </div>
+          </div>
+          <div class="form-group">
+            <input type="password" class="form-control" name="password" placeholder="Password" formControlName="password" autocomplete="off">
+            <div *ngIf="loginform.controls['password'].touched || submitted">
+                <div *ngIf="loginform.controls['password'].hasError('required')" class="error">
+                   Password is required
+                </div>
+                <!-- <div *ngIf="loginform.controls['password'].hasError('pattern')" class="error">
+                    Password must contain the pattern
+                 </div> -->
+                  </div>
+          </div>
+          <div class="form-group text-center">
+            <button type="submit" class="btn btn-info btn-md" (click)="validateLogin()">Log In</button>
+          </div>
+          <div class="form-group forget-password">
+              <a >Forget Password</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>

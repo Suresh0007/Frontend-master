@@ -1,0 +1,14 @@
+<div class="bg-light border-right sidebar nav-side-bar">
+    <div class="list-group list-group-flush">
+      <a  routerLink= "dashboard"  [routerLinkActive]="['is-active']" class="list-group-item list-group-item-action bg-light">
+          <i class="fa fa-tachometer"  [routerLinkActive]="['is-active']" aria-hidden="true"></i> Dashboard</a>
+      <a  [routerLink]= "['console/production']"  class="list-group-item list-group-item-action bg-light">
+           <i class="fa fa-users" aria-hidden="true"></i> Production Account</a>
+      <a [routerLink]= "['console/encounter']" class="list-group-item list-group-item-action bg-light">
+          <i class="fa fa-laptop" aria-hidden="true"></i> Encounter</a>
+      <a class="list-group-item list-group-item-action bg-light">
+          <i class="fa fa-user-circle-o" aria-hidden="true"></i> Audit Response</a>
+      <a class="list-group-item list-group-item-action bg-light border-bottom">
+          <i class="fa fa-file-text-o" aria-hidden="true"></i> Reports</a>
+    </div>
+  </div>

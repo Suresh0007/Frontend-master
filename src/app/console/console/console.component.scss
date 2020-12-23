@@ -1,0 +1,20 @@
+// .content{
+//     display: flex;
+//     float: left;
+//     width: 100%;
+// }
+.custom-btn{
+    position: absolute; 
+    top: 7px;
+    left: 150px;
+}
+.custom-btn:focus{
+    box-shadow: none;
+
+}
+.no-padding{
+    padding: 0px;
+}
+.main-content{
+ margin-left: 250px;   
+}

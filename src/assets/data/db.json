@@ -1,0 +1,40 @@
+{
+    "products": [
+      { 
+        "id": 1,
+        "name": "JBL", 
+        "category-id": "2",
+        "description" : "this is about jbl headphones",
+        "price": 499,
+        "is_available":true,
+        "reviews":4.4,
+        "vendor_name":"JBL auther",
+        "warranty":2
+        },
+        { "id": 3,
+            "name": "Sony", 
+            "category-id": "3",
+            "description" : "this is about sony headphones",
+           "price": 450,
+           "is_available":true,
+           "reviews":4.0,
+           "vendor_name":"Sony auther",
+           "warranty":1
+           },
+           {
+            "id": 3,
+            "name": "realme buds", 
+            "category-id": "4",
+            "description" : "this is about realme-buds headphones",
+           "price": 599,
+           "is_available":true,
+           "reviews":4.2,
+           "vendor_name":"realme auther",
+           "warranty":2
+           }
+    ],
+    "comments": [
+      { "id": 1, "body": "some comment", "postId": 1 }
+    ],
+    "profile": { "name": "typicode" }
+  }
